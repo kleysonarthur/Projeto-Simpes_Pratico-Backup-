@@ -1,0 +1,44 @@
+﻿@using SimplesPratico.Models.Enum
+@model FuncionarioModel
+@{
+    ViewData["Title"] = "Novo Funcionario";
+}
+<div class="text">
+
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    
+    <form asp-controller="Funcionarios" asp-action="Novo" method="post">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" asp-for="Nome" class="form-control" placeholder="Enter Name">
+            @Html.ValidationMessageFor(x => x.Nome)
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" asp-for="Email" class="form-control" placeholder="example@example.com">
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+        <div class="mb-3">
+            <label for="login" class="form-label">Login</label>
+            <input type="text" asp-for="Login" class="form-control" placeholder="xxxxx-xx">
+            @Html.ValidationMessageFor(x => x.Login)
+        </div>
+        <div class="mb-3">
+            <label for="perfil" class="form-label">Perfil</label>
+            <select asp-for="Perfil" class="form-control">
+                <option value="" >Selecione</option>
+                <option value="@Perfil.Administrador">Administrador</option>
+                <option value="@Perfil.Vendedor">Vendedor</option>
+                <option value="@Perfil.RH">RH</option>
+            </select>
+            @Html.ValidationMessageFor(x => x.Perfil)
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" asp-for="Senha" class="form-control">
+            @Html.ValidationMessageFor(x => x.Senha)
+        </div>
+        <button type="submit" class="btn btn-primary">Criar</button>
+        <a class="btn btn-secondary" asp-controller="Funcionarios" asp-action="Index" role="button">Voltar</a>
+    </form>
+</div>

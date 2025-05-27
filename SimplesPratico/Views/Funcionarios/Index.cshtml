@@ -1,0 +1,87 @@
+﻿@model List<FuncionarioModel>
+@{
+	ViewData["Title"] = "Lista de Funcionarios";
+}
+<div class="text-center">
+
+	@if (TempData["MensagemSucesso"] != null) {
+		<div class="alert alert-success" role="alert">
+			<button type="button" class="btn btn-outline-danger btn-sm close-alert" aria-label="Close">X</button>
+			@TempData["MensagemSucesso"]
+		</div>
+	}
+
+	@if (TempData["MensagemErro"] != null) {
+		<div class="alert alert-danger" role="alert">
+			<button type="button" class="btn btn-outline-danger btn-sm close-alert" aria-label="Close">X</button>
+			@TempData["MensagemErro"]
+		</div>
+	}
+	<br />
+
+	<h1 class="display-4">@ViewData["Title"]</h1>
+	<br />
+
+	<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+		<a class="btn btn-primary" role="button" asp-controller="Funcionarios" asp-action="Novo">Adicionar Novo</a>
+	</div>
+	<br />
+
+
+	<table class="table" id="table-funcionario">
+		<thead>
+			<tr>
+				<th class="text-center" scope="col">Nome</th>
+				<th class="text-center" scope="col">Email</th>
+				<th class="text-center" scope="col">Login</th>
+				<th class="text-center" scope="col">Cadastro</th>
+				<th class="text-center" scope="col">Perfil</th>
+				<th class="text-center" scope="col">Clientes</th>
+				<th class="text-center" scope="col"></th>
+			</tr>
+		</thead>
+		<tbody class="table-group-divider">
+			@if (Model != null && Model.Any()) {
+				foreach (FuncionarioModel funcionario in Model) {
+					<tr>
+						<td class="text-center">@funcionario.Nome</td>
+						<td class="text-center">@funcionario.Email</td>
+						<td class="text-center">@funcionario.Login</td>
+						<td class="text-center">@funcionario.Contratacao</td>
+						<td class="text-center">@(funcionario.Perfil == SimplesPratico.Models.Enum.Perfil.Administrador ? "Administrador" : "Padrão")</td>
+						<td>
+							<a href="javascript:" funcionario-id="@funcionario.Id" class="btn btn-outline-dark btn-total-clientes">
+								@(funcionario.Clientes != null && funcionario.Clientes.Any() ? funcionario.Clientes.Count() : 0)
+							</a>
+						</td>
+						<td>
+							<div class="btn-group" role="group">
+								<a role="button" class="btn btn-outline-primary" asp-route-id="@funcionario.Id" asp-controller="Funcionarios" asp-action="Editar">✏️ Editar</a>
+								<a role="button" class="btn btn-outline-danger" asp-route-id="@funcionario.Id" asp-controller="Funcionarios" asp-action="ApagarConfirmacao">🗑️ Apagar</a>
+							</div>
+						</td>
+					</tr>
+				}
+			}
+			else {
+				<tr class="odd"><td valign="top" colspan="7">Nenhum cliente encontrado!</td></tr>
+			}
+		</tbody>
+	</table>
+	<div id="modalClientesFuncionario" class="modal" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Lista de Clientes</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div id="listaClientesFuncionario"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

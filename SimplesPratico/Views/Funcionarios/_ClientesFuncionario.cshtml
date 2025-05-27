@@ -1,0 +1,24 @@
+﻿@model List<ClienteModel>
+<table class="table" id="table-clientes-funcionario">
+	<thead>
+		<tr>
+			<th scope="col">Nome</th>
+			<th scope="col">Email</th>
+			<th scope="col">Celular</th>
+		</tr>
+	</thead>
+	<tbody class="table-group-divider">
+		@if (Model != null && Model.Any()) {
+			foreach (var cliente in Model) {
+				<tr>
+					<td>@cliente.Nome</td>
+					<td>@cliente.Email</td>
+					<td>@cliente.Celular</td>
+				</tr>
+			}
+		}
+		else{
+			<tr class="odd"><td valign="top" colspan="3">Nenhum cliente encontrado!</td></tr>
+		}
+	</tbody>
+</table>

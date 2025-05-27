@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #a0a0a0; /* Cinza claro confortável */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    background-color: #ffffffd9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #ffffff
+}
+
+/* Rodapé fixo no fim */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Validação de formulário */
+.field-validation-error {
+    color: #dc3545;
+}
+
+/* Botões padrão */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.close-alert {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    border-radius: 15px;
+    width: 30px;
+    height: 31px;
+}
+
+/* Tabela */
+table.dataTable {
+    background-color: #ffffff;
+}
+
+/* Links e textos */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+#table-clientes thead {
+    background-color: #343a40; /* Cinza escuro (Bootstrap) */
+    color: white; /* Letras brancas */
+}
+
+#table-funcionario thead {
+    background-color: #343a40; /* Cinza escuro (Bootstrap) */
+    color: white; /* Letras brancas */
+}
+
+.dataTables_filter {
+    margin-bottom: 20px; /* ajuste como preferir, 10px é leve */
+}

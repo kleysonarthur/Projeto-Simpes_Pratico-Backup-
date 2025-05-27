@@ -1,0 +1,65 @@
+﻿@model List<ClienteModel>
+@{
+    ViewData["Title"] = "Lista de Clientes";
+}
+<div class="text-center">
+
+    @if (TempData["MensagemSucesso"] != null) {
+
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-outline-danger btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null) {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-outline-danger btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+    <br />
+
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <br />
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Clientes" asp-action="Novo">Adicionar Novo</a>
+    </div>
+    <br />
+
+
+    <table class="table" id="table-clientes">
+        <thead>
+            <tr>
+                <th class="text-center" scope="col">Nome</th>
+                <th class="text-center" scope="col">Email</th>
+                <th class ="text-center" scope="col">Celular</th>
+                <th class="text-center" scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @if(Model !=null && Model.Any())
+            {
+                foreach(ClienteModel cliente in Model)
+                {
+                    <tr>
+                        <td class="text-center">@cliente.Nome</td>
+                        <td class="text-center">@cliente.Email</td>
+                        <td class="text-center">@cliente.Celular</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" class="btn btn-outline-primary" asp-route-id="@cliente.Id" asp-controller="Clientes" asp-action="Editar">✏️ Editar</a>
+                                <a role="button" class="btn btn-outline-danger" asp-route-id="@cliente.Id" asp-controller="Clientes" asp-action="ApagarConfirmacao">🗑️ Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else {
+                <tr class="odd"><td valign="top" colspan="4">Nenhum cliente encontrado!</td></tr>
+            }
+        </tbody>
+    </table>
+</div>
+
