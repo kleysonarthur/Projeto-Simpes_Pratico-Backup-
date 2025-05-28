@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{48E6F24B-5F65-4DE9-938E-982AFB14ADD3}|SimplesPratico\\SimplesPratico.csproj|d:\\visual studio lobby\\c\u00F3digos\\asp.net\\supercontroler\\simplespratico\\simplespratico\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48E6F24B-5F65-4DE9-938E-982AFB14ADD3}|SimplesPratico\\SimplesPratico.csproj|solutionrelative:simplespratico\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{48E6F24B-5F65-4DE9-938E-982AFB14ADD3}|SimplesPratico\\SimplesPratico.csproj|d:\\visual studio lobby\\c\u00F3digos\\asp.net\\supercontroler\\simplespratico\\simplespratico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{48E6F24B-5F65-4DE9-938E-982AFB14ADD3}|SimplesPratico\\SimplesPratico.csproj|solutionrelative:simplespratico\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\Dockerfile",
+              "RelativeDocumentMoniker": "SimplesPratico\\Dockerfile",
+              "ToolTip": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\Dockerfile",
+              "RelativeToolTip": "SimplesPratico\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-28T19:51:26.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\Views\\Funcionarios\\Index.cshtml",
               "RelativeDocumentMoniker": "SimplesPratico\\Views\\Funcionarios\\Index.cshtml",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "SimplesPratico\\Views\\Funcionarios\\Index.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T01:14:31.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T01:14:31.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "site.js",
               "DocumentMoniker": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "SimplesPratico\\wwwroot\\js\\site.js",
@@ -59,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_LayoutDeslogado.cshtml",
               "DocumentMoniker": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\Views\\Shared\\_LayoutDeslogado.cshtml",
               "RelativeDocumentMoniker": "SimplesPratico\\Views\\Shared\\_LayoutDeslogado.cshtml",
@@ -71,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SimplesPratico\\Views\\Shared\\_Layout.cshtml",
@@ -83,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Visual Studio Lobby\\C\u00F3digos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "SimplesPratico\\wwwroot\\css\\site.css",
