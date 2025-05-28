@@ -12,10 +12,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["SimplesPratico/SimplesPratico.csproj", "SimplesPratico/"]
-RUN dotnet restore "./SimplesPratico/SimplesPratico.csproj"
+COPY ["SimplesPratico.csproj", "."]
+RUN dotnet restore "./SimplesPratico.csproj"
 COPY . .
-WORKDIR "/src/SimplesPratico"
+WORKDIR "/src/."
 RUN dotnet build "./SimplesPratico.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final
