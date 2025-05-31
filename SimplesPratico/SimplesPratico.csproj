@@ -7,7 +7,6 @@
     <OutputType>WinExe</OutputType>
     <UserSecretsId>3dfcfe59-23bb-4eb3-aa34-0a7e74dfeddb</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>

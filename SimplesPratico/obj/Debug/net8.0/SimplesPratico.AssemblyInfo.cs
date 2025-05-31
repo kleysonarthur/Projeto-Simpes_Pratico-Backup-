@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimplesPratico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+353be25ee02416a976986a4bc7a00fe1f812cce0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8afb8d28021aa0b0bb7bb045d302eb447c15ff31")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimplesPratico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimplesPratico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

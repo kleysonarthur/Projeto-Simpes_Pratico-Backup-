@@ -8504,11 +8504,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio Lobby\\Códigos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\SimplesPratico.csproj",
+      "projectUniqueName": "D:\\Visual Studio Lobby\\Códigos\\ASP.NET\\SimplesPratico\\SimplesPratico\\SimplesPratico.csproj",
       "projectName": "SimplesPratico",
-      "projectPath": "D:\\Visual Studio Lobby\\Códigos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\SimplesPratico.csproj",
+      "projectPath": "D:\\Visual Studio Lobby\\Códigos\\ASP.NET\\SimplesPratico\\SimplesPratico\\SimplesPratico.csproj",
       "packagesPath": "C:\\Users\\kleys\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio Lobby\\Códigos\\ASP.NET\\SuperControler\\SimplesPratico\\SimplesPratico\\obj\\",
+      "outputPath": "D:\\Visual Studio Lobby\\Códigos\\ASP.NET\\SimplesPratico\\SimplesPratico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Tools\\NuGetPackages"

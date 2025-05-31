@@ -2,7 +2,6 @@
 
 # Esta fase é usada durante a execução no VS no modo rápido (Padrão para a configuração de Depuração)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
@@ -12,10 +11,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["SimplesPratico.csproj", "."]
-RUN dotnet restore "./SimplesPratico.csproj"
+COPY ["SimplesPratico/SimplesPratico.csproj", "SimplesPratico/"]
+RUN dotnet restore "./SimplesPratico/SimplesPratico.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/SimplesPratico"
 RUN dotnet build "./SimplesPratico.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final
